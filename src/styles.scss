@@ -1,0 +1,138 @@
+/* You can add global styles to this file, and also import other style files */
+
+.main {
+  background-image: url("./assets/image/backgroud.png");
+  height: 100vh;
+
+  .header {
+    padding: 40px;
+    padding-left: 80px;
+    padding-right: auto;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      height: 200px;
+      .image {
+        z-index: 9999;
+      }
+    }
+
+    .burger-menu {
+      .image {
+        height: 60px;
+
+        z-index: 9999;
+      }
+    }
+  }
+
+  .body {
+    padding-left: 120px;
+    padding-right: auto;
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      .part1 {
+        h3 {
+          font-weight: 700;
+          font-size: 32px;
+        }
+        p {
+          margin-top: 32px;
+          font-size: 24px;
+          font-weight: lighter;
+       
+        }
+      }
+      .part2 {
+        margin-top: 24px;
+        h5 {
+          font-size: 28px;
+        }
+        h3 {
+          font-size: 38px;
+        }
+        hr {
+          margin-top: 24px;
+          background-color: white;
+          height: 2px;
+        }
+      }
+
+      .part3 {
+        margin-top: 32px;
+
+        h5 {
+          font-size: 32px;
+        }
+        p {
+          margin-top: 16px;
+          font-weight: 100;
+          font-size: 24px;
+        }
+        h2 {
+          margin-top: 20px;
+          font-size: 32px;
+        }
+        hr{
+            margin-top: 24px;
+          background-color: white;
+          height: 2px;
+        }
+      }
+    }
+
+    .right {
+        color: black;
+        display: flex;
+        flex-direction: column;
+        gap: 16px; 
+        .header {
+            display: flex;
+            flex-direction: column;
+            gap: 16px; 
+            h2{
+                font-size: 32px;
+                font-weight: 700;
+            }
+            p {
+                font-size: 24px;
+                font-weight: 100;
+            }
+        }
+
+        
+        .body1 {
+            margin-top: 30px;
+            padding-left: 80px;
+            padding-right: auto;
+  
+            .card{
+                display: flex;
+                gap: 8px;
+                margin-top: 30px;
+                font-size: 16px;
+                font-weight: 700;
+                align-items: center;
+            }
+            .image {
+                height: 50px;
+            }
+        }
+        
+        .footer { padding-left: 60px;
+    padding-right: auto;
+            button {
+               
+            }
+        }
+    }
+  }
+}
