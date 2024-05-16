@@ -1,11 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
-
+input{
+  outline: none;
+  border: none;
+}
 .main {
-  background-image: url("./assets/image/backgroud.png");
   height: 100vh;
-
+  background-repeat: no-repeat;
+  @media screen and (max-width: 1000px) {
+        background-image: none;
+  }
+  background-image: url("./assets/image/backgroud.png");
   .header {
-    padding: 40px;
+        @media screen and (max-width: 1000px) {
+            display: none;
+        }
+       padding: 40px;
     padding-left: 80px;
     padding-right: auto;
     height: 200px;
@@ -31,38 +40,51 @@
     padding-left: 120px;
     padding-right: auto;
     display: flex;
+    gap:100px;
     justify-content: space-between;
+     @media screen and (max-width: 1000px) {
+            padding-left: 12px;
+     }
 
     .left {
+        @media screen and (max-width: 1000px) {
+            display: none;
+        }
+
       color: white;
       display: flex;
       flex-direction: column;
       gap: 16px;
-
+      input{
+        background: none;
+        outline: none;
+        font-size: 18px;
+        border-color: white;
+        padding-bottom: 0.4rem;
+        width: 500px;
+        border-bottom-color: white;
+        border-bottom-style: solid;
+        border-bottom-width: 0.15rem;
+      }
       .part1 {
         h3 {
           font-weight: 700;
-          font-size: 32px;
+          font-size: 28px;
         }
         p {
           margin-top: 32px;
-          font-size: 24px;
+          font-size: 18px;
           font-weight: lighter;
-       
+
         }
       }
       .part2 {
         margin-top: 24px;
         h5 {
-          font-size: 28px;
+          font-size: 24px;
         }
         h3 {
-          font-size: 38px;
-        }
-        hr {
-          margin-top: 24px;
-          background-color: white;
-          height: 2px;
+          font-size: 24px;
         }
       }
 
@@ -70,16 +92,17 @@
         margin-top: 32px;
 
         h5 {
-          font-size: 32px;
+          font-size: 24px;
         }
         p {
           margin-top: 16px;
           font-weight: 100;
-          font-size: 24px;
+          font-size: 16px;
+          opacity: 60%;
         }
         h2 {
           margin-top: 20px;
-          font-size: 32px;
+          font-size: 24px;
         }
         hr{
             margin-top: 24px;
@@ -93,44 +116,65 @@
         color: black;
         display: flex;
         flex-direction: column;
-        gap: 16px; 
-        .header {
+        gap: 16px;
+
+                .header1 {
             display: flex;
             flex-direction: column;
-            gap: 16px; 
+            gap: 16px;
             h2{
+                @media screen and (max-width: 1000px) {
+                  margin-to: 10;
+                }
                 font-size: 32px;
                 font-weight: 700;
             }
             p {
+                @media screen and (max-width: 1000px) {
+                  margin: 0;
+                }
+
                 font-size: 24px;
                 font-weight: 100;
             }
         }
 
-        
+
         .body1 {
             margin-top: 30px;
             padding-left: 80px;
             padding-right: auto;
-  
+            @media screen and (max-width: 1000px) {
+              margin-top: 1px;
+              padding-left: 12px;
+              padding-right: 12px;
+            }
             .card{
+              @media screen and (max-width: 1000px) {
+                margin-top: 10px;
+              }
                 display: flex;
                 gap: 8px;
                 margin-top: 30px;
                 font-size: 16px;
-                font-weight: 700;
                 align-items: center;
             }
             .image {
                 height: 50px;
             }
         }
-        
-        .footer { padding-left: 60px;
-    padding-right: auto;
+
+        .footer {
+          padding-left: 60px;
+          display: flex;
+          justify-content: center;
+          padding-right: auto;
             button {
-               
+              background: #80b1b7;
+              color: white;
+              padding: 12px 20px 12px 20px;
+              border-radius: 10px;
+
             }
         }
     }
